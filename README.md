@@ -34,7 +34,7 @@ such a layout.
 
 Kblayout can print all ten gears an xkb maps may have set. Below is a sample
 layout obtained with `kblayout -g7` command:
-![Screenshot on vte based terminal emulator](../site/pics/keybG7.png)
+![Screenshot on vte based terminal emulator](../pics/keybG7.png)
 
 ---
 
