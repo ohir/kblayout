@@ -137,12 +137,12 @@ The =CKeys directive allows one to assign physical keys to symbolic ones.
   Default pc105 codes are shown below. Swap them to set desired placement
   of all your levers. All other directives respect changes set here.
 
- =CKeys LCTL:37 LALT:64 LWIN:133 SP:65 RALT:108 RWIN:134 MENU:135 RCTL:105
+` =CKeys LCTL:37 LALT:64 LWIN:133 SP:65 RALT:108 RWIN:134 MENU:135 RCTL:105`
 
 
 The =Levers directive assigns a gear lever, G3, and G5 symbols to keys.
 
- =Levers CAPS // is the Lever. CapsLock toggles with both Shifts pressed.
+` =Levers CAPS // is the Lever. CapsLock toggles with both Shifts pressed.`
 
   First is the symbol for the Lever key: NONE, CAPS, F1, F12, or TILDE
 
@@ -151,21 +151,21 @@ The =Levers directive assigns a gear lever, G3, and G5 symbols to keys.
   if pressed without shift). This is default behaviour also with CAPS as
   a Lever. Disable F1 as insert using -f1keep flag.
 
- =Levers CAPS G3:RALT G3:LWIN SUPER:RWIN G9:MENU // See "Extra Gears" for G9
+` =Levers CAPS G3:RALT G3:LWIN SUPER:RWIN G9:MENU // See "Extra Gears" for G9`
 
 
 The US PC 105-keys physical layout looks like:
-
+```
     ESC F1 2 3 4 5 6 7 8 9 10 11 F12        PSc ScLk PSbr
       ` 1 2 3 4 5 6 7 8 9 0 - = BKSP        INS HOME PGUP      NL P/ P* P-
     TAB  q w e r t y u i o p [ ] \          DEL END  PGDN      P7 P8 P9 P+
     CAPS  a s d f g h j k l ; ' ENTER                          P4 P5 P6 P+
     SH ■ z x c v b n m , . / SHIFT               UP            P1 P2 P3 PE
     CTL ALT WIN |space| ALT WIN MNU CTL     LEFT DN RIGHT        P0  PD PE
-
+```
 
 Layouts are defined by seven blocks, each headed by the (fixed) key row header:
-
+```
  =Funcs  ESC    F1   F2   F3   F4   F5   F6   F7   F8   F9   F10  F11  F12  DEL
  =Digit  `   1    2    3    4    5    6    7    8    9    0    -    =    BKSP
  =Tab    TAB  q    w    e    r    t    y    u    i    o    p    [    ]    \
@@ -173,7 +173,7 @@ Layouts are defined by seven blocks, each headed by the (fixed) key row header:
  =Shift  LSGT   z    x    c    v    b    n    m    ,    .    /    SPACE
  =NumPad P0   P1   P2   P3   P4   P5   P6   P7   P8   P9   P/   P*   P-   P+
  =EdMov  P.   PENT INS  HOME END  PGUP PGDN UP   DOWN LEFT RIGHT
-
+```
 Unlike with xkb files, you need not to know hex notations of a codepoint to
 make your layout source.  Kbconfig expects you to just enter the symbol of
 interest. Copy-paste it from the web or from the "Characters Map" utility.
